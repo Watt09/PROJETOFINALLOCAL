@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Administrar Clientes</title>
+</head>
+
+<body>
+     
+    <header>
+        <h1>Gestão de Clientes</h1>
+      </header>
+    
+      <nav>
+        <a href="../inicio.html">Menu</a>
+          <a href="/venda/venda.html">Gerenciar Vendas</a></li>
+          <a href="/categoria/categoria.html">Gerenciar Categorias</a></li>
+          <a href="/clientes/clientes.html">Gerenciar Clientes</a></li>
+          <a href="/produto/produtos.html">Gerenciar Produtos</a></li>
+          <a href="/funcionario/funcionario.html">Gerenciar Funcionários</a></li>
+          <a href="/relatorio/relatorio.html">Gerenciar Lucros e Custos</a></li>
+      </nav>
+      <h1>Cadastro de Clientes</h1>
+    <form id="form_Cliente">
+        <input type="hidden" id="id">
+        
+        <label for="primeiro_nome">Nome</label>
+        <input type="text" id="primeiro_nome">
+        
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome">
+        
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf">
+        
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        
+        <label for="nascimento">Nascimento</label>
+        <input type="text" id="nascimento">
+        
+        <button id="btSalvar">Salvar</button>
+    </form>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NOME</th>
+                <th>SOBRENOME</th>
+                <th>CPF</th>
+                <th>EMAIL</th>
+                <th>NASCIMENTO</th>
+                <th>OPÇÕES</th>
+            </tr>
+        </thead>
+        <tbody id="tbody1"></tbody>
+    </table>
+
+</body>
+<script src="manipula_interface_atividade.js" type="module"></script>
+
+</html>

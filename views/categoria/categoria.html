@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Administrar Categorias</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Gestão de Categorias</h1>
+      </header>
+    
+      <nav>
+        <a href="../inicio.html">Menu</a>
+          <a href="/venda/venda.html">Gerenciar Vendas</a></li>
+          <a href="/categoria/categoria.html">Gerenciar Categorias</a></li>
+          <a href="/clientes/clientes.html">Gerenciar Clientes</a></li>
+          <a href="/produto/produtos.html">Gerenciar Produtos</a></li>
+          <a href="/funcionario/funcionario.html">Gerenciar Funcionários</a></li>
+          <a href="/relatorio/relatorio.html">Gerenciar Lucros e Custos</a></li>
+      </nav>
+      <H1>Cadastro de Categoria</H1>
+    <form id="form_Categoria">
+        <input type="hidden" id="id">
+        
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        
+        <label for="descricao">Descrição</label>
+        <input type="text" id="descricao">
+        
+        <button id="btSalvar">Salvar</button>
+    </form>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NOME</th>
+                <th>DESCRIÇÃO</th>
+                <th>OPÇÕES</th>
+            </tr>
+        </thead>
+        <tbody id="tbody1"></tbody>
+    </table>
+
+</body>
+<script src="manipula_interface_categoria.js" type="module"></script>
+</html>

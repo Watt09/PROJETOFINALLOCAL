@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login do Administrador</h1>
+    <form id="loginForm">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="loginError" style="color: red; display: none;">Usuário ou senha incorretos!</p>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const loginError = document.getElementById("loginError");
+
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "1234") {
+        window.location.href = "inicio.html";
+      } else {
+        loginError.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

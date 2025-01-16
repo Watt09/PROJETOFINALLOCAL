@@ -1,0 +1,194 @@
+/* styles/style.css */
+
+/* Paleta de cores */
+:root {
+  --primary-blue: #1c3a57; /* Azul escuro */
+  --secondary-blue: #163048; /* Azul ainda mais escuro */
+  --light-blue: #eaf3fc; /* Azul muito claro (leve contraste) */
+  --white: #ffffff; /* Branco */
+  --gray: #f0f0f0; /* Fundo cinza claro */
+  --dark-gray: #333333; /* Cinza escuro */
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: var(--gray);
+  color: var(--dark-gray);
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  background-color: var(--secondary-blue);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--primary-blue);
+}
+
+/* Form */
+form {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: var(--secondary-blue);
+}
+
+/* Select */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--white);
+  color: var(--dark-gray);
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 5px rgba(28, 58, 87, 0.5);
+}
+
+select option {
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+/* Table */
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table thead {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 15px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--light-blue);
+}
+
+table tbody tr:hover {
+  background-color: var(--secondary-blue);
+  color: var(--white);
+}
+
+table tbody td:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+table button {
+  padding: 5px 10px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+table button:hover {
+  background-color: var(--secondary-blue);
+}
